@@ -5,53 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex21</title>
-    <link rel="stylesheet" href="../Ex21.html criação de Tela de Login/style.css">
+    <title>Ex21 Login</title>
+    <link rel="stylesheet" href="../Ex21 HTML Criação de tela de login para o site/style.css">
 </head>
 
 <body>
-    <form action="">
-        <div id="formulario">
-
-            <div>
-                <h1>Login de Usuário</h1>
+    <div class="login">
+        <h2>Login de Usuário</h2>
+    
+        <form action="#">
+            <div class="form-name">
+                <label for="username">Nome de Usuário ou E-mail</label>
+                <input type="text" id="username" name="username" required>
             </div>
 
-            <div>
-                <label id="nome_email" for="form-nome">Nome de Usuário ou E-mail:</label>
+            <div class="form-senha">
+                <label for="password">Senha:</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+
+            <div class="check-box-lembrar-senha">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">Lembre-me</label>
+            </div>
+
+            <div class="botao-entrar">
+                <button type="submit">Entrar</button>
                 <br>
-                <input type="text" name="username" id="username" required>
+                <button type="reset">Limpar</button>
             </div>
 
-            <div>
-                <label id="senha" for="form-senha">Senha:</label>
-                <br>
-                <input type="number" name="password" id="password">
+            <div class="botao-esqueceu-senha">
+                <a href="#">Esqueci senha</a>
             </div>
 
-            <div>
-                <input type="checkbox" name="password" id="box-lembrar">
-                <br>
-                <label id="box-nome" for="lembrar">Lembre-me</label>
+            <div class="botao-criar-conta">
+                <a href="#">Criar conta</a>
             </div>
-
-            <div>
-                <button id="botao-entrar" type="submit">Entrar</button>
-            </div>
-
-            <div>
-                <button id="botao-limpar" type="submit">Limpar</button>
-            </div>
-
-            <div>
-                <a id="esqueci-senha" href="#">Esqueci a senha</a>
-            </div>
-
-            <div>
-                <a id="criar-conta" href="#">Criar conta</a>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
