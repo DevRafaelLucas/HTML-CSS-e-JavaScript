@@ -1,0 +1,51 @@
+/* Corpo da página */
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Corpo do formulário */
+
+body .form{
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    margin: 0% 40% 3% 30%;
+    color: rgb(0, 0, 0);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 20px;
+    height: 190vh;
+}
+
+/*  */
+
+label{
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+input[type="text"], [type="number"]{
+    text-align: left;
+    display: block;
+    width: 95%;
+}
+
+/*  */
+
+#generos label{
+    font-weight: bold;
+}
+
+#generos input[type="radio"] {
+    text-align: left;
+    display: block;
+}
+
+#generos p {
+    text-align: left;
+    display: block;
+}
+
