@@ -7,19 +7,18 @@ body{
 /* Corpo do formulário */
 
 body .form{
-    background-color: rgb(255, 255, 255);
-    padding: 1%;
-    margin: 0% 40% 3% 30%;
+    background-color: rgb(255, 255, 255); 
+    padding: 1%; /* espaçamento interno do formulário */
+    margin: 0% 30% 30% 30%; 
     color: rgb(0, 0, 0);
     display: block;
     justify-content: center;
     text-align: center;
     font-size: 100%;
     border-radius: 20px;
-    height: 190vh;
 }
 
-/*  */
+/* Entrada de dados */
 
 label{
     display: block;
@@ -33,19 +32,17 @@ input[type="text"], [type="number"]{
     width: 95%;
 }
 
-/*  */
+/* gêneros */
 
-#generos label{
+#generos_titulo{
     font-weight: bold;
 }
 
-#generos input[type="radio"] {
-    text-align: left;
-    display: block;
-}
 
-#generos p {
-    text-align: left;
-    display: block;
-}
 
+/* contato */
+
+#titulo_contato {
+    font-weight: bold;
+    
+}

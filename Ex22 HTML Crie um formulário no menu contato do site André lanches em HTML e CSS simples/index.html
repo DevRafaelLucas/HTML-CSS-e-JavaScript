@@ -6,66 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 22 Crie um formulário no Menu contato do site André Lanches em HTML e CSS Simples</title>
-    <link rel="stylesheet" href="../Ex22 HTML Crie um formulário no menu contato do site André lanches em HTML e CSS simples/style.css">
+    <link rel="stylesheet"
+        href="../Ex22 HTML Crie um formulário no menu contato do site André lanches em HTML e CSS simples/style.css">
 </head>
 
 <body>
     <div class="form">
         <form action="#">
 
-            <div id="Titulo_form">
-                <h1>Menu de contato</h1>
-            </div>
+            <div id="formulario_parte1">
 
-            <div id="nome_usuario">
-                <label for="nome_usuario">Informe seu nome completo:</label>
-                <br>
-                <input type="text" name="name" id="name" required>
-            </div>
+                <div id="titulo_formulário">
+                    <h1>Menu de contato</h1>
+                </div>
 
-            <div id="email_usuario">
-                <label for="email_usuario">Informe seu Email:</label>
-                <br>
-                <input type="text" name="email" id="email" required>
-            </div>
+                <div id="nome_usuario">
+                    <label for="nome_usuario">Informe seu nome completo:</label>
+                    <br>
+                    <input type="text" name="name" id="name" required>
+                </div>
 
-            <div id="telefone_usuario">
-                <label for="telefone_usuario">Informe seu Telefone:</label>
-                <br>
-                <input type="number" name="telephone" id="telephone" required>
-            </div>
+                <div id="email_usuario">
+                    <label for="email_usuario">Informe seu Email:</label>
+                    <br>
+                    <input type="text" name="email" id="email" required>
+                </div>
 
-            <div id="assunto">
-                <label for="assunto">Qual o Assunto?</label>
-                <br>
-                <input type="text" name="subject" id="subject" required>
-            </div>
+                <div id="telefone_usuario">
+                    <label for="telefone_usuario">Informe seu Telefone:</label>
+                    <br>
+                    <input type="number" name="telephone" id="telephone" required>
+                </div>
 
-            <div id="mensagem">
-                <label for="mensagem">Digite sua Mensagem:</label>
-                <br>
-                <input type="text" name="Message" id="Message" required>
+                <div id="assunto">
+                    <label for="assunto">Qual o Assunto?</label>
+                    <br>
+                    <input type="text" name="subject" id="subject" required>
+                </div>
+
+                <div id="mensagem">
+                    <label for="mensagem">Digite sua Mensagem:</label>
+                    <br>
+                    <input type="text" name="Message" id="Message" required>
+                </div>
             </div>
 
             <div id="generos">
-                <label for="generos">Qual seu gênero?</label>
+                <label id="generos_titulo" for="generos">Qual seu gênero?</label>
                 <br>
-                <p>Masculino</p>
-                <input type="radio" name="gender_masculino" id="gender_masculino" required>
-                <p>Feminino</p> 
-                <input type="radio" name="gender_feminino" id="gender_feminino" required>
-                <p>Outro</p>
-                <input type="radio" name="gender_outro" id="gender_outro" required>
+
+                <div id="selecao_masculino">
+                    <input type="radio" name="gender_male" id="gender_male" required>
+                    <label for="genero_masculino">Masculino</label>
+                </div>
+
+                <div id="selecao_feminino">
+                    <input type="radio" name="gender_female" id="gender_female" required>
+                    <label for="genero_feminino">Feminino</label>
+                </div>
+                <div id="selecao_outro">
+                    <input type="radio" name="gender_other" id="gender_other" required>
+                    <label for="genero_outros">Outro</label>
+                </div>
             </div>
 
             <div id="preferencia_de_contato">
-                <label for="Preferencia de contato">Qual a preferencia contato?</label>
+                <label id="titulo_contato" for="Preferencia de contato">Qual a preferencia contato?</label>
                 <br>
-                <p>Email</p>
+
+                <label for="contato_email">Email</label>
                 <input type="checkbox" name="contact_preference_email" id="contact_preference_email" required>
-                <p>SMS</p>
+
+                <label for="contato_SMS">SMS</label>
                 <input type="checkbox" name="contact_preference_sms" id="contact_preference_sms" required>
-                <p>Telefone</p>
+
+                <label for="contato_telefone">Telefone</label>
                 <input type="checkbox" name="contact_preference_telefone" id="contact_preference_telefone" required>
             </div>
 

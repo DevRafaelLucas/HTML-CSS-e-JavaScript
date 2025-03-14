@@ -64,24 +64,21 @@ label {
     margin-bottom: 5px; /* margem debaixo aumentada */
 }
 
-/* input [type="checkbox"]{
-    margin-right: 2px;
-} */
-
-a {
+a{
     display: block; /* Coloca as colunas  */
     font-size: 0.9; /* altera o Tamanho da fonte */
     text-decoration: none; /* tira a decoração do nome */
-    margin-top: 5px; /* altera o tamanho da margem superior */
+    margin-top: 10px; /* altera o tamanho da margem superior */
+    text-align: left; /* centraliza o texto */
 }
 
-a:hover {
+a:hover{
     text-decoration: underline; /* coloca sublinhado ao passar em uma palavra */
     color: rgb(51, 255, 255); /* altera a cor ao passar o cursor em cima da palavra */
 }
 
-button {
-    width: 190px; /* altera a largura */
+button{
+    width: 105%; /* altera a largura */
     padding: 8px; /* altera o espaçamento */
     border-radius: 4px; /* arredonda as pontas */
     border: none; /* tira as bordas */
@@ -91,5 +88,27 @@ button {
     cursor: pointer; /* cursor vira um mão apontando */
 }
 
+button[type="reset"]{
+    background-color: red; /* altera a cor de fundo */
+    margin-top: 5px; /* aumenta o tamanho da margem do topo */
+}
 
+button:hover{
+    opacity: 0.9; /* diminui a opacidade ao passar o mouse por cima */
+}
 
+.check-box-lembrar-senha{
+    width: 100%; /* aumenta a largura da caixa de seleção */
+    text-align: left; /* alinha o texto para esquerda */
+    display: flex; /* deixa o espaçamento flexivel */
+    margin-bottom: 20px; /* aumenta a margem superior */
+    gap: 10px; /* separa os itens */
+}
+
+input[type="text"], [type="password"]{
+    width: 100%; /* aumenta a largura da caixa de seleção */
+    padding: 2px; /* altera o espaçamento */
+    border: 1px solid rgb(rgb(190, 190, 190), green, blue); /*  */
+    border-radius: 4px; /* arredonda as pontas */
+    font-size: 18px; /* tamanho da letra */
+}
